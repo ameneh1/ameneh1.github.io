@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
 
-	#ameneh{
-		height:700px;
-		width:700px;
-		background-repeat: no-repeat;
-		background-image: url(https://i.pinimg.com/originals/66/99/ee/6699ee4da4fc51441ec560fad9c4a922.gif);
-	}
-
-	
-	</style>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+
+	<style type="text/css">
+
+		#star1{
+			width: 100px;
+			height: 100px;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQr5ERGhliCCyPCfJpMY1QtP0GER0YQqX7UY8j6npW6glkyG6iZS5AGSGbeK-tX1mzvtA&usqp=CAU);
+			background-repeat: no-repeat;
+
+			animation-name: fly;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			position: relative;
+}
+		
+		@keyframes fly{
+
+			0%{
+				left: 0px;
+				top: 0px;
+
+			}
+
+			50%{
+				left: 700px;
+				top: 250px;
+				width: 300px;
+				height: 300px;
+				background-color: white;
+			}
+
+			100%{
+				left: 1400px;
+				top: 750px;
+			}
+		}
+
+	</style>
 </head>
 <body>
-<div id="ameneh" 
-/div>
+
+
+<div id="star1"></div>
+<div id="star2"></div>
 
 </body>
 </html>
