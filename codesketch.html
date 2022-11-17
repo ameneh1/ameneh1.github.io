@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+ 
+    <style>
+
+    	#back{
+    		width: 844px;
+    		height: 454px;
+    		position: fixed;
+    		background-color: hotpink;
+    		background-image: url(https://i.pinimg.com/originals/52/b3/ca/52b3caaa9e283398b6d5b80a11938bed.gif);
+    		left: 276px;
+    		top: 167px;
+    		font-size: 77px;
+    		font-family: georgia-serif-bold;
+    		color: white;
+    		text-align: center;
+    		align-items: center;
+    		text-align: center;
+    		padding-top: 100px;
+
+    	}
+        #square{
+			width:750px;
+			height:145px;
+			background-color:transparent;
+			position: fixed;
+			top: 10px;
+			left: 10px;
+
+		}
+
+		#square2{
+			width:2000px;
+			height:880px;
+			position: fixed;
+			background-image: url(https://emojis.wiki/emoji-pics/apple/love-letter-apple.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			top: 0px;
+			left: 258px;
+;
+		}
+
+.hbd1{
+		color: deeppink;
+		font-family: helvetica-bold;
+		font-size: 76px;
+		width: 32%;
+		position: absolute;
+		top: 340px;
+		left: 360px;
+
+}
+
+.hbd2{
+		color: deeppink;
+		font-family: helvetica-bold;
+		font-size: 76px;
+		width: 32%;
+		position: absolute;
+		top: 340px;
+		left: 655px;
+
+}
+
+.new{
+		color: black;
+		font-family: helvetica-bold;
+		font-size: 76px;
+		width: 32%;
+		position: absolute;
+		top: 340px;
+		left: 655px;
+
+}
+
+.text1{
+		color: black;
+		font-family: helvetica-bold;
+		font-size: 66px;
+		width: 32%;
+		position: absolute;
+		top: 25px;
+		left: 35px;
+		display: inline-block;
+		white-space: nowrap;
+
+
+	</style>
+
+
+</head>
+<body>
+
+<div class="hbd1">HAPPY</div>
+
+<div class="hbd2">BIRTHDAY!</div>
+
+<div class="text1">Click here to open!</div>
+
+
+		    <div id="back"><p>HAPPY BIRTHDAY!</p></div>
+
+	    <div id="square"></div>
+    <div id="square2"></div>
+    <script type="text/javascript">
+
+    var counter = 0;
+
+    var square = document.getElementById("square");
+
+
+
+    var square2 = document.getElementById("square2");
+
+
+    square.addEventListener("click", function() {
+    	counter = counter +1;
+    	    	console.log(counter)
+
+
+    	if (counter%2 == 1 ){
+    		square2.style.opacity = "0";
+
+    	}
+        
+        else if (counter%2 == 0 )
+
+        {
+        square2.style.opacity = "1";	
+        }
+
+    })
+    </script>
+
+
+
+</body>
+</html>

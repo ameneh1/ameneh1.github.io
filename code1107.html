@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		.puppies{
+			width: 100px;
+			height: 100px;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		#golden{
+
+
+		}
+
+		#lucky{
+			background-image: url(https://cdn.shopify.com/s/files/1/0243/7988/3625/files/Vector_Smart_Object.png?1148);
+		}
+	</style>
+</head>
+<body>
+
+	<div> id="lucky" class="puppies"></div>
+	<div> id="golden" class="puppies"></div>
+	<div> class="puppies"></div>
+
+	<script type="text/javascript">
+
+		let counter = 0;
+		
+		function makePuppy (){
+			counter = counter +1;
+
+			let puppy = document.createElement("div");
+
+			document.body.appendChild(puppy)
+
+			puppy.clientList.add("puppies")
+
+			puppy.innerText = counter;
+
+		}
+
+setInterval(makePuppy, 100)
+
+		explain()
+
+
+
+
+	</script>
+</body>
+</html>
