@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+
+
+
+	
+	.photos{
+height: 400px;
+width: 600px;
+background-color: lightblue;
+margin: 10px;
+display: inline-block;
+position: relative;
+	}
+#photo:hover{
+	transition: 1s;
+	background-color: lightpink;
+}
+
+
+#photo1:hover{
+	transition: 3s;
+	background-image: url(photo1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+#photo2:hover{
+	transition: 3s;
+	background-image: url(photo2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#photo3:hover{
+	background-image: url(photo3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+#photo4:hover{
+	background-image: url(photo4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#photo5:hover{
+	background-image: url(photo5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#photo6:hover{
+	background-image: url(photo6.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#photo7:hover{
+	background-image: url(photo7.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#photo8:hover{
+	background-image: url(photo8.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#photo9:hover{
+	background-image: url(photo9.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+        p{
+            font-size:70px;
+            color:mediumaquamarine;
+        }
+
+        h1{
+            font-size:100px;
+            color:mediumaquamarine;
+        }
+
+
+    </style>
+</head>
+<body>
+	<h1>Ameneh's Photo Album</h1>
+<p>Hover over the boxes to see!</p>
+<div class="photos" id= "photo1"></div> 
+<div class="photos" id= "photo2"></div>
+<div class="photos" id= "photo3"></div>
+<div class="photos" id= "photo4"></div>
+<div class="photos" id= "photo5"></div>
+<div class="photos" id= "photo6"></div>
+<div class="photos" id= "photo7"></div>
+<div class="photos" id= "photo8"></div>
+
+
+<br><br>
+
+
+
+<script type="text/javascript">
+
+//For all of your media, to use this, label each file  with numbers (eg.1.jpg, 2.jpg) and keep them in the same folder as this html file. If they are not jpgs, change the extension "jpg" in the recipe below (line 25) to whatever file type they are.  
+
+//Below is the recipe to make the squares appear on the page//
+    
+    function makeSquare (x) {
+
+            var square = document.createElement('div');
+                        document.body.appendChild(square);
+            square.style.width = "500px";
+            square.style.height = "400px";
+            square.style.display = "inline-block";
+            square.style.margin = "10px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.border = "200px";
+            square.style.backgroundColor = "transparent";
+
+            square.style.backgroundImage = "url(" + x + ".jpg)";
+
+            square.style.backgroundSize = "contain";
+            square.style.id = "square" + x;};
+
+//Below, is the for loop in which where the squares are actually made. This for loop is where the function above is actually called. It is called 14 times, (between the values of 0 and 15) and because the variable i is declared in the for loop and is then being passed to the makeSquare recipe, each time the function runs, i changes in value (+1). Thus, the attributes that involve the i change in value as well (eg. the id attribute changes to be whatever i was last time, plus 1.)//
+
+    for (var i = 0; i < 15; i++) 
+    { makeSquare(i);}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+		p{
+			font-size: 60px;
+			font-family: helvetica-bold;
+			color: royalblue;
+
+		}
+
+		#box {
+			width: 500px;
+			height: 500px;
+			font-size: 85px;
+			color: lightcoral;
+			top: 350px;
+			border: 10px;
+		}
+
+	</style>
+
+
+</head>
+<body>
+
+	<center>
+		<p>Magic 8 Ball - Ask a question & click below for a response!</p>
+		<div id="box"></div>
+	</center>
+
+<script type="text/javascript">
+
+	var myAnswers = ["signs point to yes", "unlikely", "absolutely", "please try again", "without a doubt", "chances aren't good"]
+
+		box.addEventListener("click", function(){
+			var randomNumber = Math.round(Math.random()*5);
+			box.style.backgroundImage = "url(" + myAnswers[randomNumber] + ")"
+			box.innerText = myAnswers[randomNumber];
+			console.log(randomNumber)
+		})
+
+</script>
+
+</body>
+</html>
