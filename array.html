@@ -14,14 +14,31 @@
 
 		}
 
+		#hello {
+			width: 500px;
+			height: 500px;
+			position: absolute;
+			background-repeat: no-repeat;
+			top: 250px;
+			left: 500px;
+			background-image: url(magic.png);
+		}
+
+
 		#box {
 			width: 500px;
 			height: 500px;
-			font-size: 85px;
-			color: lightcoral;
-			top: 350px;
+			font-size: 20px;
+			font-family: helvetica;
+			color: white;
+			top: 50px;
+			left: -15px;
 			border: 10px;
+			position: relative;
 		}
+
+
+
 
 	</style>
 
@@ -31,7 +48,12 @@
 
 	<center>
 		<p>Magic 8 Ball - Ask a question & click below for a response!</p>
-		<div id="box"></div>
+		<div id="hello">
+					<br><br><br><br><br><br><br><br>
+
+			<div id="box"></div>
+		
+		</div>
 	</center>
 
 <script type="text/javascript">
