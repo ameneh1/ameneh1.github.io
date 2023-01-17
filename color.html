@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style>
+	#hello{
+		width:1422px;
+		height:1px;
+		border-bottom:solid 900px;
+		background-color:grey;
+	}
+
+	#stars{
+		background-image: url(https://64.media.tumblr.com/a5ee6d62ef261da76b951c2b25f0ca7e/tumblr_n5scf7CTdD1sfvpsto1_500.gif);
+		width: 200px;
+	}
+
+</style>
+</head>
+<body>
+
+	<div id="stars"></div>
+
+	<div id="hello"></div>
+
+	<script type="text/javascript">
+
+		var box = document.getElementById("hello");
+		box.style.backgroundColor = "rgb(200, 200, 100)";
+		
+		document.addEventListener(
+			"mousemove", function(event){
+				console.log(hello.style );
+				hello.style.borderBottomColor = "rgb("+ event.clientX + "," + event.clientY + "," + 0 + ")" 
+			}
+
+			)
+
+
+	</script>
+
+
+</body>
+</html>
