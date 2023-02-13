@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	.noses{
+		height: 277px;
+		width: 277px;
+		background-color: white;
+		margin: 3px;
+		display: inline-block;
+		background-image: url(https://i.pinimg.com/originals/f0/35/c2/f035c22e040f86a1698bd0481a8802de.gif);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+	//goal: make 100 or more divs. To do this we are going to create a function/recipe which creates divs -- makes a div, puts in the body, adds class which allows us to style it. We'll run this function 1000 times in a for loop//
+
+	function makeDivs (placeholder){
+		var box = document.createElement("div")
+		document.body.appendChild(box);
+		box.classList.add("noses");
+		box.innerText = placeholder
+
+		box.addEventListener("click", function(){
+			box.style.backgroundImage="url(https://i.pinimg.com/originals/ca/5f/72/ca5f7279fac547e0804c8341af9e2e6c.gif)"
+		})
+	}
+
+for (var i=0; i<1001; i=i+1)
+{makeDivs(i)}
+
+</script>
+</body>
+</html>
