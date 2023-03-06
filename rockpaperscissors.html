@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style type="text/css">
+	
+	#rock1{
+		height: 200px;
+		width: 200px;
+		left: 100px;
+		top: 200px;
+		background-image: url(rock.jpg);
+		background-repeat: no-repeat;
+		position: absolute;
+		background-size: contain;
+	}
+
+	#paper1{
+		height: 200px;
+		width: 200px;
+		left: 300px;
+		top: 200px;
+		background-image: url(paper.jpg);
+		background-repeat: no-repeat;
+		position: absolute;
+		background-size: contain;
+	}
+
+	#scissors1{
+		height: 200px;
+		width: 200px;
+		left: 500px;
+		top: 200px;
+		background-image: url(scissors.jpg);
+		background-repeat: no-repeat;
+		position: absolute;
+		background-size: contain;
+	}
+
+	#line{
+		height: 1000px;
+		width: 5px;
+		left: 770px;
+		background-color: black;
+		position: absolute;
+	}
+
+	#box{
+		height: 10px;
+		width: 200px;
+		left: 100px;
+		top: 370px;
+		background-color: yellow;
+		position: absolute;
+	}
+
+
+</style>
+
+</head>
+<body>
+
+	<div id="rock1"></div>
+	<div id="paper1"></div>
+	<div id="scissors1"></div>
+	<div id="line"></div>
+	<div id="box"></div>
+
+
+	<script type="text/javascript">
+
+	var counter = 0;
+
+    var rock1 = document.getElementById("rock1");
+
+
+
+    var box = document.getElementById("box");
+
+
+    rock1.addEventListener("click", function() {
+    	counter = counter +1;
+    	    	console.log(counter)
+
+
+    	if (counter%2 == 1 ){
+    		box.style.opacity = "1";
+
+    	}
+        
+        else if (counter%2 == 0 )
+
+        {
+        box.style.opacity = "0";	
+        }
+
+    })
+
+
+
+
+
+
+
+
+
+
+	var myAnswers = ["signs point to yes", "unlikely", "absolutely", "please try again", "without a doubt", "chances aren't good"]
+
+		box.addEventListener("click", function(){
+			var randomNumber = Math.round(Math.random()*5);
+			box.style.backgroundImage = "url(" + myAnswers[randomNumber] + ")"
+			box.innerText = myAnswers[randomNumber];
+			console.log(randomNumber)
+		})
+
+</script>
+
+</body>
+</html>
