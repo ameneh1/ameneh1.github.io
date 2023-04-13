@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		.bug{
+			width: 100px;
+			height: 100px;
+			background-color: white;
+			background-image: url(bug.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			transition: 1s;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	
+	function ladybugs (){
+		var bug = document.createElement("div");
+		document.body.appendChild(bug);
+		bug.classList.add('bug');
+
+		function move () {bug.style.left = Math.random()*1000+"px";}
+
+		setInterval(move, 500)
+
+		}
+
+	for(var i = 0; i<100; i = i+1){
+		ladybugs()
+	}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	.dots{
+		height: 20px;
+		width: 20px;
+		background-color: white;
+		margin: 3px;
+		display: inline-block;
+		background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Location_dot_black.svg/1024px-Location_dot_black.svg.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: relative;
+		filter:hue-rotate(45deg);
+	}
+</style>
+
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+
+
+<div id="dots" src="dots.png">
+</div>
+		
+		dots.addEventListener("mousemove",
+		function(event){
+	
+		dots.style.filter= "hue-rotate("+ event.clientX + "deg)";
+
+
+		})
+
+
+
+</script>
+</body>
+</html>
