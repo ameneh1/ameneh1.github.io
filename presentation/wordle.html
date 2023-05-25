@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style type="text/css">
+
+	input{
+		height: 90px;
+		width: 90px;
+		background-color: lightpink;
+		position: absolute;
+		text-align: center;
+		font-size: 40px;		
+
+	}
+	#word1letter1{
+		top: 150px;
+		left: 500px;
+		
+	}
+	#word1letter2{
+		
+		top: 150px;
+		left: 600px;
+		
+	}
+	#word1letter3{
+		
+		top: 150px;
+		left: 700px;
+		
+	}	
+	#word1letter4{
+		
+		top: 150px;
+		left: 800px;
+		
+	}
+
+	#word2letter1{
+		
+		top: 250px;
+		left: 500px;
+		
+	}
+	#word2letter2{
+		
+		top: 250px;
+		left: 600px;
+		
+	}
+	#word2letter3{
+		
+		top: 250px;
+		left: 700px;
+		
+	}	
+	#word2letter4{
+		
+		top: 250px;
+		left: 800px;
+		
+	}
+	#word3letter1{
+		
+		top: 350px;
+		left: 500px;
+		
+	}
+	#word3letter2{
+		
+		top: 350px;
+		left: 600px;
+		
+	}
+	#word3letter3{
+		
+		top: 350px;
+		left: 700px;
+		
+	}	
+	#word3letter4{
+		
+		top: 350px;
+		left: 800px;
+		
+	}
+
+	#word4letter1{
+		
+		top: 450px;
+		left: 500px;
+		
+	}
+	#word4letter2{
+		
+		top: 450px;
+		left: 600px;
+		
+	}
+	#word4letter3{
+		
+		top: 450px;
+		left: 700px;
+		
+	}	
+	#word4letter4{
+		
+		top: 450px;
+		left: 800px;
+		
+	}
+
+	#button1{
+		left: 903px;
+		top: 170px;
+		position: absolute;
+		height: 30px;
+		font-size: 40px;
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+	#button2{
+		left: 903px;
+		top: 270px;
+		position: absolute;
+		height: 30px;
+		font-size: 40px;
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+	#button3{
+		left: 903px;
+		top: 370px;
+		position: absolute;
+		height: 30px;
+		font-size: 40px;
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+	#button4{
+		left: 903px;
+		top: 470px;
+		position: absolute;
+		height: 30px;
+		font-size: 40px;
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+	#greenbox{
+		height: 150px;
+		width: 290px;
+		left: 27px;
+		top: 25px;
+		position: absolute;
+		background-color: greenyellow;
+
+	}
+
+	#greenbox2{
+		height: 100px;
+		width: 260px;
+		left: 566px;
+		top: 588px;
+		position: absolute;
+		background-color: greenyellow;
+		text-align: center;
+		font-family: helvetica-bold;
+		font-size: 32px;
+		color: limegreen;
+		border-top: 10px;
+		padding-top: 27px;
+		border: 3px solid;
+		border-color: hotpink;
+			}
+
+	#pinkbox{
+		height: 100px;
+		width: 260px;
+		left: 566px;
+		top: 588px;
+		position: absolute;
+		background-color: transparent;
+		text-align: center;
+		font-family: helvetica-bold;
+		font-size: 32px;
+		color: transparent;
+		border-top: 10px;
+		padding-top: 27px;
+		border: 3px solid;
+		border-color: hotpink;
+			}
+
+	#graybox{
+		height: 136px;
+		width: 290px;
+		left: 556px;
+		top: 588px;
+		position: absolute;
+		background-color: lightgray;
+			}
+
+	#w1l1{
+		height: 90px;
+		width: 90px;
+		background-color: transparent;
+		border: 5px solid;
+		border-color: hotpink;
+		left: 499px;
+		top: 149px;
+		position: absolute;
+	}
+
+	#w1l2{
+		height: 90px;
+		width: 90px;
+		background-color: transparent;
+		border: 5px solid;
+		border-color: greenyellow;
+		left: 599px;
+		top: 149px;
+		position: absolute;
+	}
+
+
+	#key1{
+		height: 40px;
+		width: 40px;
+		background-color: transparent;
+		border: 3px solid;
+		border-color: greenyellow;
+		left: 1100px;
+		top: 149px;
+		position: absolute;
+	}
+	#key2{
+		height: 40px;
+		width: 40px;
+		background-color: transparent;
+		border: 3px solid;
+		border-color: hotpink;
+		left: 1100px;
+		top: 220px;
+		position: absolute;
+	}
+	#key3{
+		height: 40px;
+		width: 40px;
+		background-color: transparent;
+		border: 3px solid;
+		border-color: black;
+		left: 1100px;
+		top: 291px;
+		position: absolute;
+	}
+	#keybox{
+		height: 285px;
+		width: 280px;
+		background-color: gainsboro;
+		left: 1080px;
+		top: 84px;
+		position: absolute;
+		border: 3px solid;
+		border-color: transparent;
+	}
+
+
+</style>
+</head>
+<body>
+
+<!-- <div id="keybox"></div>
+<p style="color:black; font-size:28px; font-family:helvetica-bold; position: absolute; top: 89px; left: 1098px; height: 120px; margin-top: 10px;">Key</p>
+<p style="color:black; font-size:25px; font-family:helvetica-bold; position: absolute; top: 145px; left: 1160px; height: 120px; margin-top: 10px;">correct</p>
+<p style="color:black; font-size:25px; font-family:helvetica-bold; position: absolute; top: 216px; left: 1160px; height: 120px; margin-top: 10px;">wrong position</p>
+<p style="color:black; font-size:25px; font-family:helvetica-bold; position: absolute; top: 287px; left: 1160px; height: 120px; margin-top: 10px;">incorrect</p> -->
+
+
+<p style="color:black; font-size:75px; font-family:helvetica-bold; position: absolute; top: 595px; left: 627px; height: 120px; margin-top: 10px;">ring</p>
+
+<div id="pinkbox">Click here to reveal word!</div>
+
+<div id="greenbox"></div>
+<div id="greenbox2">Click here to reveal word!</div>
+<!-- <div id="graybox"></div> 
+ -->
+
+<p style="color:black; font-size:50px; font-family:helvetica-bold; position: absolute; top: 5px; left: 611px">Wordle</p>
+
+<p style="color:hotpink; font-size:23px; font-family:helvetica-bold; position: absolute; top: 30px; left: 48px">Instructions:</p>
+
+<p style="color:hotpink; font-size:23px; font-family:helvetica-bold; position: absolute; top: 30px; left: 48px">Instructions:</p>
+
+<p style="color:limegreen; font-size:15px; font-family:helvetica-bold; position: absolute; top: 74px; left: 50px; width: 250px;">Enter your guesses into each row, and then click the star next to it to check your guess! Good luck!</p>
+
+			<input id="word1letter1"></input>
+			<input id="word1letter2"></input>
+			<input id="word1letter3"></input>
+			<input id="word1letter4"></input>
+
+			<input id="word2letter1"></input>
+			<input id="word2letter2"></input>
+			<input id="word2letter3"></input>
+			<input id="word2letter4"></input>
+
+			<input id="word3letter1"></input>
+			<input id="word3letter2"></input>
+			<input id="word3letter3"></input>
+			<input id="word3letter4"></input>
+
+			<input id="word4letter1"></input>
+			<input id="word4letter2"></input>
+			<input id="word4letter3"></input>
+			<input id="word4letter4"></input>
+
+
+			<button id="button1">⭐</button>
+			<button id="button2">⭐</button>
+			<button id="button3">⭐</button>
+			<button id="button4">⭐</button>
+
+<!-- <div id="w1l1"></div>
+<div id="w1l2"></div>
+ -->
+<!-- <div id="key1"></div>
+<div id="key2"></div>
+<div id="key3"></div> -->
+
+
+
+			<script type="text/javascript">
+
+				button1.addEventListener("click", function(){
+					if (word1letter1.value == "r" && 
+						word1letter2.value =="i" && word1letter3.value == "n" && word1letter4.value == "g")
+
+						{ alert("correct!")}
+
+					else if (word1letter1.value !== "r" || 
+						word1letter2.value !=="i" || word1letter3.value !== "n" || word1letter4.value !== "g")
+
+						{ alert("incorrect!")}
+
+
+				});
+
+				button2.addEventListener("click", function(){
+
+					if (word2letter1.value == "r" && 
+						word2letter2.value =="i" && word2letter3.value == "n" && word2letter4.value == "g")
+
+						{ alert("correct!")}
+
+					else if (word2letter1.value !== "r" || 
+						word2letter2.value !=="i" || word2letter3.value !== "n" || word2letter4.value !== "g")
+
+						{ alert("incorrect!")}
+
+				});
+
+				button3.addEventListener("click", function(){
+
+					if (word3letter1.value == "r" && 
+						word3letter2.value =="i" && word3letter3.value == "n" && word3letter4.value == "g")
+
+						{ alert("correct!")}
+
+					else if (word3letter1.value !== "r" || 
+						word3letter2.value !=="i" || word3letter3.value !== "n" || word3letter4.value !== "g")
+
+						{ alert("incorrect!")}
+				});
+
+				button4.addEventListener("click", function(){
+
+					if (word4letter1.value == "r" && 
+						word4letter2.value =="i" && word4letter3.value == "n" && word4letter4.value == "g")
+
+						{ alert("correct!")}
+
+					else if (word4letter1.value !== "r" || 
+						word4letter2.value !=="i" || word4letter3.value !== "n" || word4letter4.value !== "g")
+
+						{ alert("incorrect!")}
+
+				})
+
+
+    var counter = 0;
+
+    var greenbox2 = document.getElementById("greenbox2");
+
+
+
+    var greenbox2 = document.getElementById("greenbox2");
+
+
+    greenbox2.addEventListener("click", function() {
+    	counter = counter +1;
+    	    	console.log(counter)
+
+
+    	if (counter%2 == 1 ){
+    		greenbox2.style.opacity = "0";
+
+    	}
+        
+        else if (counter%2 == 0 )
+
+        {
+        greenbox2.style.opacity = "1";	
+        }
+
+    })
+
+
+
+		// 	var word1 = 'ring';
+		// 		var row;
+				
+		// 		// var row = letter;
+
+
+
+		// 			function checkRow1Words(x){
+		// 				row = document.getElementById("word1letter1")
+
+		// 				 row = row + document.getElementById("word1letter"+(x+1)).value;
+
+
+		// 				console.log(row)
+
+		// 				// row = word1letter1.value
+						
+
+		// 				}
+
+						
+
+				
+		// 		button.addEventListener("click", function(){
+
+		//  // row = document.getElementById("word1letter"+1).value;
+
+
+		// for (var i=1; i<5; i=i+1){
+			
+		// 	checkRow1Words(i)}
+
+				
+
+		// 	if (row== word1){alert("correct!")}
+
+		// 	if (row !== word1){alert("wrong!")}
+
+		// 				})
+
+
+
+			</script>
+		
+</body>
+</html>
